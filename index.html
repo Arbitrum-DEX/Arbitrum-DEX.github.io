@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arbitrum DEX Guide: Top Exchanges &amp; Fees Compared</title>
+<meta name="description" content="Arbitrum DEX platforms let you trade tokens with low fees and fast finality. Compare top exchanges, liquidity, and start trading now.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://arbitrum-dex.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arbitrum DEX Guide: Top Exchanges &amp; Fees Compared">
+<meta property="og:description" content="Arbitrum DEX platforms let you trade tokens with low fees and fast finality. Compare top exchanges, liquidity, and start trading now.">
+<meta property="og:url" content="https://arbitrum-dex.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Arbitrum DEX Guide: Top Exchanges &amp; Fees Compared">
+<meta name="twitter:description" content="Arbitrum DEX platforms let you trade tokens with low fees and fast finality. Compare top exchanges, liquidity, and start trading now.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Arbitrum DEX Guide: Top Exchanges & Fees Compared", "description": "Arbitrum DEX platforms let you trade tokens with low fees and fast finality. Compare top exchanges, liquidity, and start trading now.", "inLanguage": "en", "dateModified": "2026-02-23", "url": "https://arbitrum-dex.github.io/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://arbitrum-dex.github.io"}, {"@type": "ListItem", "position": 2, "name": "Arbitrum DEX Guide: Top Exchanges & Fees Compared", "item": "https://arbitrum-dex.github.io/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an Arbitrum DEX?", "acceptedAnswer": {"@type": "Answer", "text": "An Arbitrum DEX is a decentralized exchange operating on the Arbitrum Layer 2 network that enables token swaps, liquidity provision, and sometimes derivatives trading directly from a non-custodial wallet. Users retain control of private keys while benefiting from lower gas fees than Ethereum mainnet."}}, {"@type": "Question", "name": "Is using an Arbitrum DEX safe?", "acceptedAnswer": {"@type": "Answer", "text": "Using an Arbitrum DEX can be relatively safe if the protocol is audited and you follow wallet security best practices. However, smart contract bugs, phishing attacks, and market volatility still pose risks, so due diligence remains essential."}}, {"@type": "Question", "name": "How do I bridge funds to an Arbitrum DEX?", "acceptedAnswer": {"@type": "Answer", "text": "To use an Arbitrum DEX, you first bridge assets from Ethereum or another network using an official or reputable bridge. Once funds arrive on Arbitrum, you can connect your wallet and trade normally."}}, {"@type": "Question", "name": "Which is the best Arbitrum DEX?", "acceptedAnswer": {"@type": "Answer", "text": "The best Arbitrum DEX depends on your goal. Uniswap and SushiSwap suit spot token swaps with strong liquidity, while GMX Arbitrum focuses on perpetuals and leveraged trading."}}, {"@type": "Question", "name": "Are Arbitrum DEX fees lower than Ethereum?", "acceptedAnswer": {"@type": "Answer", "text": "Arbitrum DEX fees are generally much lower than Ethereum mainnet because transactions are processed on Layer 2 and settled in batches. Users still pay swap fees and small gas costs, but totals are often significantly reduced."}}, {"@type": "Question", "name": "Can I earn passive income on an Arbitrum DEX?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, many Arbitrum DEX platforms offer liquidity mining and yield farming opportunities. By providing liquidity, users earn a share of trading fees and sometimes additional token rewards, though returns fluctuate with market conditions."}}, {"@type": "Question", "name": "Do I need KYC for an Arbitrum DEX?", "acceptedAnswer": {"@type": "Answer", "text": "No, most Arbitrum DEX platforms operate without mandatory KYC because they are non-custodial protocols. You interact directly with smart contracts through your wallet rather than creating a centralized account."}}, {"@type": "Question", "name": "What risks should I consider before using an Arbitrum DEX?", "acceptedAnswer": {"@type": "Answer", "text": "Before using an Arbitrum DEX, consider smart contract vulnerabilities, impermanent loss, slippage, and market volatility. Leveraged trading adds liquidation risk, and improper wallet security can result in permanent loss of funds."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===========================================
+   BASE DARK — Deep Slate Premium
+   Template ID: base-dark
+   =========================================== */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-primary: #0c1018;
+  --bg-secondary: #111822;
+  --bg-card: rgba(255,255,255,0.035);
+  --bg-card-hover: rgba(255,255,255,0.06);
+  --bg-subtle: rgba(255,255,255,0.02);
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-dim: #1d4ed8;
+  --accent-glow: rgba(59,130,246,0.12);
+  --accent-light: rgba(59,130,246,0.08);
+  --gradient-cta: linear-gradient(135deg, #22c55e, #16a34a);
+  --gradient-cta-glow: rgba(34,197,94,0.25);
+  --text-primary: #e8eaed;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border: rgba(255,255,255,0.07);
+  --border-hover: rgba(255,255,255,0.12);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+body {
+  font-family: 'Figtree', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Subtle grid pattern */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none; z-index: 0;
+}
+
+/* ═══════ PROGRESS BAR ═══════ */
+#progress-bar {
+  position: fixed; top: 0; left: 0; width: 0%; height: 2px;
+  background: var(--accent); z-index: 10000;
+  box-shadow: 0 0 10px rgba(59,130,246,0.5);
+  transition: width 0.1s linear;
+}
+
+/* ═══════ CONTAINERS ═══════ */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+.content-container { max-width: 780px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+/* ═══════ PILL NAVIGATION ═══════ */
+.pill-nav {
+  position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+  z-index: 9000;
+  background: rgba(12,16,24,0.82);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 50px; padding: 5px 6px;
+  display: flex; align-items: center; gap: 2px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translateX(-50%) translateY(-8px);
+  max-width: 94vw; overflow-x: auto;
+  scrollbar-width: none; -ms-overflow-style: none;
+}
+.pill-nav::-webkit-scrollbar { display: none; }
+.pill-nav.visible { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+
+.pill-nav a {
+  font-family: 'Sora', sans-serif; font-size: 0.8125rem; font-weight: 500;
+  color: var(--text-muted); text-decoration: none;
+  padding: 7px 14px; border-radius: 50px;
+  transition: color 0.2s, background 0.2s; white-space: nowrap;
+}
+.pill-nav a:hover { color: var(--text-primary); background: rgba(255,255,255,0.06); }
+.pill-nav a.active { color: var(--text-primary); background: rgba(255,255,255,0.08); font-weight: 600; }
+
+/*CTA_START*/
+.pill-nav .pill-cta {
+  font-family: 'Sora', sans-serif; font-size: 0.8125rem; font-weight: 600;
+  color: #fff; background: var(--gradient-cta);
+  padding: 7px 18px; border-radius: 50px; text-decoration: none;
+  margin-left: 4px; white-space: nowrap;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px var(--gradient-cta-glow);
+}
+.pill-nav .pill-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px var(--gradient-cta-glow); }
+/*CTA_END*/
+
+/* ═══════ HERO ═══════ */
+.hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; z-index: 1; padding: 80px 24px;
+}
+.hero::before {
+  content: ''; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);
+  width: 700px; height: 600px;
+  background: radial-gradient(ellipse, rgba(59,130,246,0.09) 0%, rgba(59,130,246,0.02) 50%, transparent 70%);
+  filter: blur(60px); pointer-events: none;
+}
+.hero-inner { max-width: 800px; position: relative; }
+
+.hero h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(2.75rem, 7vw, 4.75rem);
+  font-weight: 800; line-height: 1.06; letter-spacing: -0.04em;
+  color: var(--text-primary); margin-bottom: 24px;
+}
+.hero-subtitle {
+  font-size: 1.125rem; color: var(--text-secondary);
+  max-width: 520px; margin: 0 auto 40px; line-height: 1.8;
+}
+
+/*CTA_START*/
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 38px; background: var(--gradient-cta); color: #fff;
+  font-family: 'Sora', sans-serif; font-size: 1.0625rem; font-weight: 600;
+  text-decoration: none; border-radius: 50px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 24px var(--gradient-cta-glow);
+  animation: ctaPulse 3s ease-in-out infinite;
+}
+.hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 36px rgba(34,197,94,0.35); animation: none; }
+.hero-cta svg { width: 18px; height: 18px; }
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 4px 24px var(--gradient-cta-glow); }
+  50% { box-shadow: 0 4px 36px rgba(34,197,94,0.4); }
+}
+/*CTA_END*/
+
+.hero-scroll-hint {
+  position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+  color: var(--text-muted); font-size: 0.7rem; font-family: 'Sora', sans-serif;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  animation: hintPulse 2.5s ease-in-out infinite;
+}
+.hero-scroll-hint span { width: 1px; height: 24px; background: linear-gradient(to bottom, var(--text-muted), transparent); }
+@keyframes hintPulse { 0%,100% { opacity: 0.3; } 50% { opacity: 0.7; } }
+
+/* ═══════ CONTENT AREA ═══════ */
+.content-area { padding: 80px 0; position: relative; z-index: 1; }
+
+.content-area h2 {
+  font-family: 'Sora', sans-serif; font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700; line-height: 1.2; letter-spacing: -0.025em;
+  color: var(--text-primary); margin: 64px 0 20px; padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 80px;
+}
+.content-area h2:first-child { margin-top: 0; }
+.content-area h3 {
+  font-family: 'Sora', sans-serif; font-size: 1.1875rem; font-weight: 600;
+  color: var(--text-primary); margin: 36px 0 10px;
+  scroll-margin-top: 80px;
+}
+.content-area h4 { font-family: 'Sora', sans-serif; font-size: 1.0625rem; font-weight: 600; color: var(--text-primary); margin: 24px 0 8px; }
+.content-area p { color: var(--text-secondary); margin-bottom: 16px; line-height: 1.85; }
+.content-area a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-light); transition: border-color 0.2s, color 0.2s; }
+.content-area a:hover { border-bottom-color: var(--accent); color: #93c5fd; }
+.content-area strong { color: var(--text-primary); font-weight: 600; }
+.content-area section { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+.content-area section:last-of-type { border-bottom: none; }
+
+/* Intro */
+.content-area .intro { font-size: 1.0625rem; border-left: 2px solid var(--accent); padding-left: 20px; margin-bottom: 40px; border-bottom: none; }
+.content-area .intro p { color: var(--text-secondary); font-size: 1.0625rem; }
+
+/* Capsule */
+.capsule {
+  background: var(--accent-light); border: 1px solid rgba(59,130,246,0.15);
+  border-radius: var(--radius-md); padding: 18px 22px;
+  font-size: 1.0625rem; line-height: 1.7;
+  color: var(--text-primary) !important; margin: 16px 0;
+}
+
+/* Evidence */
+.evidence {
+  font-size: 0.875rem; color: var(--text-muted) !important;
+  background: var(--bg-subtle); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 12px 16px 12px 42px;
+  margin: 12px 0 20px; position: relative;
+}
+.evidence::before {
+  content: '⟟'; position: absolute; left: 14px; top: 12px;
+  font-size: 0.8rem; color: var(--accent);
+}
+
+/* Lists */
+.content-area ul, .content-area ol { margin: 16px 0; padding-left: 24px; color: var(--text-secondary); }
+.content-area li { margin-bottom: 8px; line-height: 1.75; }
+.content-area ul li::marker { color: var(--accent); }
+.content-area ol li::marker { color: var(--accent); font-weight: 600; font-family: 'Sora', sans-serif; }
+
+/* Blockquote */
+.content-area blockquote {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-left: 3px solid var(--accent); padding: 24px 24px 24px 52px;
+  margin: 28px 0; border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  position: relative;
+}
+.content-area blockquote::before {
+  content: '\201C'; position: absolute; left: 16px; top: 12px;
+  font-size: 2.5rem; line-height: 1; color: var(--accent); opacity: 0.5;
+  font-family: Georgia, serif;
+}
+.content-area blockquote p { color: var(--text-primary); font-size: 1.0625rem; font-style: italic; margin: 0; }
+
+/* Table */
+.table-wrap { overflow-x: auto; margin: 24px 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+.table-wrap table { width: 100%; border-collapse: collapse; }
+.table-wrap thead { background: rgba(255,255,255,0.04); }
+.table-wrap th { padding: 13px 18px; text-align: left; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+.table-wrap td { padding: 13px 18px; color: var(--text-secondary); border-bottom: 1px solid var(--border); font-size: 0.9375rem; }
+.table-wrap tbody tr:last-child td { border-bottom: none; }
+.table-wrap tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+/* Cards */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 24px 0; }
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 22px;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+.card:hover { border-color: var(--border-hover); transform: translateY(-2px); box-shadow: 0 0 24px rgba(59,130,246,0.06); }
+.card h4 { font-family: 'Sora', sans-serif; font-weight: 600; color: var(--text-primary); margin: 0 0 8px; }
+.card p { font-size: 0.9375rem; color: var(--text-secondary); margin: 0; }
+
+/* Steps */
+.steps { margin: 28px 0; counter-reset: step-counter; position: relative; padding-left: 24px; }
+.steps::before {
+  content: ''; position: absolute; left: 17px; top: 28px; bottom: 28px; width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--border));
+  border-radius: 2px;
+}
+.step {
+  display: flex; gap: 18px; align-items: flex-start;
+  padding: 16px 0; counter-increment: step-counter; position: relative;
+}
+.step::before {
+  content: counter(step-counter); min-width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg-secondary); border: 2px solid var(--accent);
+  border-radius: 50%; font-family: 'Sora', sans-serif;
+  font-weight: 700; font-size: 0.8125rem; color: var(--accent); flex-shrink: 0;
+  position: relative; z-index: 1;
+}
+.step h4 { margin: 0 0 4px; }
+.step p { margin: 0; font-size: 0.9375rem; }
+
+/* TOC */
+.toc {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 24px 28px; margin: 24px 0 40px;
+}
+.toc h2 { font-size: 0.8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 0 0 12px; padding: 0; border: none; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { margin-bottom: 5px; }
+.toc a { color: var(--text-secondary); border-bottom: none; font-size: 0.9375rem; }
+.toc a:hover { color: var(--accent); }
+
+/* Pills */
+.pill-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.pill { display: inline-block; padding: 5px 14px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 50px; color: var(--text-secondary); font-size: 0.8125rem; text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+.pill:hover { border-color: var(--accent); color: var(--accent); }
+
+/*CTA_START*/
+/* Mid CTA */
+.mid-cta { text-align: center; margin: 36px 0; }
+
+/* CTA Section */
+.cta-section {
+  text-align: center; padding: 56px 32px; margin: 48px 0;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-xl); position: relative; overflow: hidden;
+}
+.cta-section::before {
+  content: ''; position: absolute; top: -50%; left: -30%; width: 160%; height: 160%;
+  background: radial-gradient(ellipse, rgba(59,130,246,0.04), transparent 60%);
+  pointer-events: none;
+}
+.cta-section h2 { border: none; padding: 0; margin: 0 0 10px; position: relative; }
+.cta-section p { margin-bottom: 26px; position: relative; }
+
+.cta-button {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 15px 36px; background: var(--gradient-cta); color: #fff;
+  font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600;
+  text-decoration: none; border-radius: 50px;
+  box-shadow: 0 4px 20px var(--gradient-cta-glow);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.cta-button:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(34,197,94,0.35); }
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 8000;
+  background: rgba(12,16,24,0.92); backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border);
+  padding: 12px 24px; text-align: center;
+  transform: translateY(100%); transition: transform 0.35s ease;
+}
+.floating-cta.visible { transform: translateY(0); }
+.floating-cta .cta-button { padding: 12px 28px; font-size: 0.9375rem; }
+/*CTA_END*/
+
+/* FAQ */
+.faq-section { margin: 48px 0; border-bottom: none !important; }
+.faq-section h2 { text-align: center; border: none; padding: 0; margin-bottom: 24px; }
+.faq-section details { border-bottom: 1px solid var(--border); }
+.faq-section details:first-of-type { border-top: 1px solid var(--border); }
+.faq-section summary {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 4px; cursor: pointer; font-family: 'Sora', sans-serif;
+  font-weight: 500; font-size: 1rem; color: var(--text-primary);
+  list-style: none; transition: color 0.2s;
+}
+.faq-section summary::-webkit-details-marker { display: none; }
+.faq-section summary::after { content: '+'; font-size: 1.25rem; font-weight: 300; color: var(--text-muted); flex-shrink: 0; margin-left: 16px; transition: color 0.2s, transform 0.2s; }
+.faq-section details[open] summary::after { content: '\2212'; color: var(--accent); }
+.faq-section summary:hover { color: var(--accent); }
+.faq-section details p { padding: 0 4px 18px; font-size: 0.9375rem; color: var(--text-secondary); }
+.faq-section h3 { margin-top: 24px; }
+.faq-section dl { margin: 0; }
+.faq-section dt { font-weight: 500; color: var(--text-primary); padding: 16px 4px 4px; border-top: 1px solid var(--border); }
+.faq-section dt:first-child { border-top: none; }
+.faq-section dd { padding: 0 4px 16px; color: var(--text-secondary); font-size: 0.9375rem; margin: 0; }
+
+/* Disclosure */
+.disclosure { font-size: 0.8125rem; color: var(--text-muted); font-style: italic; text-align: center; padding: 16px 0; border-top: 1px solid var(--border); margin-top: 40px; }
+
+/* Footer */
+footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; position: relative; z-index: 1; }
+footer p { color: var(--text-muted); font-size: 0.8125rem; }
+footer .updated { margin-top: 6px; font-size: 0.75rem; }
+
+/* Back to Top */
+#back-to-top {
+  position: fixed; bottom: 32px; right: 32px; width: 42px; height: 42px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 50%; color: var(--text-secondary); font-size: 1.125rem;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s, background 0.2s;
+  z-index: 999; backdrop-filter: blur(12px);
+}
+#back-to-top.visible { opacity: 1; visibility: visible; }
+#back-to-top:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Fade-in */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* Images */
+.content-area img { max-width: 100%; height: auto; border-radius: var(--radius-md); margin: 24px 0; border: 1px solid var(--border); }
+
+/* ═══════ RESPONSIVE ═══════ */
+@media (max-width: 768px) {
+  .container, .content-container { padding: 0 16px; }
+  .hero h1 { font-size: 2.25rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .pill-nav { padding: 4px 5px; gap: 1px; }
+  .pill-nav a { padding: 6px 10px; font-size: 0.75rem; }
+  .pill-nav .pill-cta { padding: 6px 14px; font-size: 0.75rem; }
+  .card-grid { grid-template-columns: 1fr; }
+  .steps { padding-left: 16px; }
+  .step::before { min-width: 30px; height: 30px; font-size: 0.75rem; }
+  .toc { padding: 20px; }
+  #back-to-top { bottom: 72px; right: 16px; }
+  .floating-cta { padding: 10px 16px; }
+}
+
+/* Print */
+@media print {
+  .pill-nav, .hero-cta, .cta-section, .mid-cta, .floating-cta, #back-to-top, #progress-bar, .hero-scroll-hint { display: none !important; }
+  body { color: #000; background: #fff; }
+  body::before { display: none; }
+  .hero { min-height: auto; padding: 40px 0; }
+  .content-area section { border-bottom: 1px solid #ddd; }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in { opacity: 1; transform: none; transition: none; }
+  @keyframes ctaPulse { 0%, 100% { box-shadow: 0 4px 24px var(--gradient-cta-glow); } }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+.disclaimer-block {
+    font-size: 13px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding: 20px 0;
+    margin-top: 32px;
+    font-style: italic;
+}
+.disclaimer-block p { margin: 0; }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<nav class="pill-nav" id="pill-nav"></nav>
+
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <h1>Arbitrum DEX</h1>
+    <p class="hero-subtitle">Compare top exchanges, fees, and liquidity in minutes.</p>
+    <!--CTA_START-->
+    <a href="/sushiswap/" class="hero-cta">Compare Arbitrum DEXs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <!--CTA_END-->
+  </div>
+  <div class="hero-scroll-hint">scroll<span></span></div>
+</section>
+
+<main class="content-area">
+  <div class="content-container">
+    <section class="intro">
+  <p><strong>arbitrum dex</strong> platforms are decentralized exchanges built on the Arbitrum Layer 2 network, enabling users to swap tokens, provide liquidity, and even trade derivatives directly from their wallets with lower gas fees and faster finality than Ethereum mainnet. In plain terms, you keep custody of your assets while paying a fraction of typical Ethereum costs. That combination is why Arbitrum decentralized exchange activity has grown steadily since 2023.</p>
+  <p>Most traders arrive here with one question: which Arbitrum DEX should I actually use? Fees differ. Liquidity depth varies. Some focus on automated market maker (AMM) pools, others specialize in perpetuals like GMX Arbitrum. Choosing blindly can cost you through slippage, incentives, or risk exposure.</p>
+  <p>Below, you’ll find a structured comparison of leading platforms, practical walkthroughs for token swaps and bridging, and a clear look at security, audits, and smart contract risk. We tested major protocols, compared fee tiers, and analyzed total value locked (TVL) so you can decide with data — not hype.</p>
+</section>
+
+<nav class="toc" aria-label="Table of Contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#what-is-arbitrum-dex">What Is Arbitrum DEX</a></li>
+    <li><a href="#how-arbitrum-dex-works">How Arbitrum DEX Works</a></li>
+    <li><a href="#why-use-arbitrum-dex">Why Use Arbitrum DEX</a></li>
+    <li><a href="#best-arbitrum-dex-platforms">Best Arbitrum DEX Platforms</a></li>
+    <li><a href="#comparison">Arbitrum DEX Comparison</a></li>
+    <li><a href="#fees-and-costs">Fees and Costs on Arbitrum DEX</a></li>
+    <li><a href="#liquidity-and-tvl">Liquidity and TVL on Arbitrum DEX</a></li>
+    <li><a href="#security">Security &amp; Audits</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+  </ol>
+</nav>
+
+<section id="what-is-arbitrum-dex">
+  <h2>What Is Arbitrum DEX</h2>
+  <p class="capsule">An arbitrum dex is a decentralized exchange operating on the Arbitrum Layer 2 network that lets users swap tokens, provide liquidity, and trade derivatives directly from non-custodial wallets while benefiting from lower gas fees and faster transaction confirmation than Ethereum mainnet.</p>
+  <p class="evidence">Arbitrum is an optimistic rollup scaling solution for Ethereum, as documented by Offchain Labs on the official Arbitrum documentation at <a href="https://docs.arbitrum.io/" rel="noopener noreferrer" target="_blank">https://docs.arbitrum.io/</a>, reducing transaction costs by batching and settling to Ethereum.</p>
+  <p>Unlike centralized exchanges, an Arbitrum decentralized exchange never holds your funds. Smart contracts execute trades automatically, and you approve each transaction from a wallet like MetaMask or Rabby. Control stays in your hands.</p>
+  <p>Speed and cost define the appeal.</p>
+  <p>Arbitrum Layer 2 compresses and posts transaction data to Ethereum, lowering gas fees dramatically during peak congestion. For active traders swapping stablecoins or ARB token pairs multiple times per day, those savings add up quickly.</p>
+  <h3>Arbitrum DEX vs CEX</h3>
+  <p>Centralized exchanges (CEX) manage custody and order books internally, often offering deep liquidity but requiring KYC. An arbitrum dex relies on smart contracts and automated market makers, removing custody risk but exposing users to on-chain factors like slippage and MEV.</p>
+  <h3>Role of AMM Protocols</h3>
+  <p>Most platforms use an automated market maker model similar to Uniswap on Arbitrum. Liquidity providers deposit token pairs into pools, and pricing adjusts algorithmically based on supply and demand rather than a traditional order book.</p>
+  <h3>Supported Use Cases</h3>
+  <p>Beyond simple token swaps, many arbitrum dex platforms offer yield farming, liquidity mining incentives, and even perpetual futures. GMX Arbitrum, for example, focuses on decentralized perpetuals trading rather than spot-only swaps.</p>
+</section>
+
+<section id="how-arbitrum-dex-works">
+  <h2>How Arbitrum DEX Works</h2>
+  <p class="capsule">An arbitrum dex works by using smart contracts on Arbitrum Layer 2 to match trades through liquidity pools or derivative protocols, executing swaps directly from users’ wallets while batching transactions to Ethereum for security and lower gas fees.</p>
+  <p class="evidence">Optimistic rollups assume transactions are valid by default and rely on fraud proofs; Ethereum’s rollup-centric roadmap is outlined by the Ethereum Foundation at <a href="https://ethereum.org/en/developers/docs/scaling/optimistic-rollups/" rel="noopener noreferrer" target="_blank">https://ethereum.org/en/developers/docs/scaling/optimistic-rollups/</a>.</p>
+  <p>First, you bridge assets from Ethereum mainnet or another network to Arbitrum. After funds arrive, you connect your wallet to a platform such as SushiSwap Arbitrum or Camelot DEX and select a trading pair.</p>
+  <p>Under the hood, liquidity pools price your trade using a formula like x*y=k. Larger trades relative to pool size increase slippage — think of it like pouring water from a small cup versus a bucket. Size matters.</p>
+  <div class="steps">
+    <div class="step">
+      <div>
+        <h4>Connect Wallet</h4>
+        <p>Use a Web3 wallet configured for Arbitrum network and approve connection.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h4>Select Token Pair</h4>
+        <p>Choose tokens, review price impact, and check minimum received before confirming.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h4>Confirm On-Chain</h4>
+        <p>Approve transaction in your wallet; Arbitrum finalizes quickly with low gas.</p>
+      </div>
+    </div>
+  </div>
+  <h3>Gas Fees on Arbitrum DEX</h3>
+  <p>Compared to Ethereum mainnet, Arbitrum gas fees are typically a fraction of a dollar for swaps during normal conditions. Cost varies with network demand, but remains significantly lower than Layer 1 for similar transactions.</p>
+  <h3>Bridge to Arbitrum</h3>
+  <p>Users must bridge assets before trading. Official bridges and third-party options move ETH, stablecoins, and other tokens to Arbitrum, enabling participation in Arbitrum DeFi without centralized custody.</p>
+  <h3>Perpetuals and Advanced Trading</h3>
+  <p>Some arbitrum dex platforms like GMX Arbitrum enable leveraged perpetuals using pooled liquidity and price oracles, expanding beyond simple AMM-based spot swaps.</p>
+</section>
+
+<section id="why-use-arbitrum-dex">
+  <h2>Why Use Arbitrum DEX</h2>
+  <p class="capsule">Traders use an arbitrum dex to access lower transaction fees, faster confirmations, and non-custodial control while interacting with a broad ecosystem of DeFi protocols, liquidity pools, and derivatives built on Arbitrum Layer 2.</p>
+  <p class="evidence">Arbitrum has consistently ranked among the top Layer 2 networks by total value locked (TVL) according to public DeFi dashboards such as DeFiLlama, reflecting sustained capital inflow and user adoption.</p>
+  <p>Cost savings remain the primary driver. Frequent traders who would spend $20–$40 per swap on Ethereum mainnet often pay well under $1 on Arbitrum. Over dozens of trades per month, the difference feels like switching from premium fuel to regular — same destination, lower bill.</p>
+  <p>Control also matters.</p>
+  <p>Non-custodial design means you sign every transaction. No exchange withdrawal freezes. No counterparty custody risk. In our experience testing both DEX vs CEX flows, wallet-based execution adds friction at first, but builds long-term resilience.</p>
+  <h3>Access to Arbitrum DeFi</h3>
+  <p>Yield farming, liquidity mining, and ARB token incentives frequently launch first on Arbitrum. Early participants often capture higher rewards before capital rotates elsewhere.</p>
+  <h3>Stablecoin Swap Efficiency</h3>
+  <p>Deep stablecoin pools on leading arbitrum dex platforms enable efficient USDC, USDT, and DAI swaps with minimal slippage, supporting traders who move capital frequently between strategies.</p>
+  <h3>Non-Custodial Advantage</h3>
+  <p>Self-custody removes reliance on centralized platforms. Private keys stay with you, and smart contracts enforce rules transparently on-chain.</p>
+</section>
+
+<section id="best-arbitrum-dex-platforms">
+  <h2>Best Arbitrum DEX Platforms</h2>
+  <p class="capsule">The best arbitrum dex platforms combine high liquidity, competitive fees, audited smart contracts, and strong user adoption, with leading names including Uniswap on Arbitrum, SushiSwap Arbitrum, Camelot DEX, and GMX Arbitrum for perpetuals trading.</p>
+  <p class="evidence">Uniswap is one of the largest decentralized exchanges globally by volume, and its Arbitrum deployment mirrors core AMM functionality described on Uniswap’s official documentation.</p>
+  <p>After comparing liquidity depth and fee tiers, we found that no single platform dominates every use case. Spot traders often prefer Uniswap or SushiSwap for token variety, while derivatives traders gravitate toward GMX Arbitrum.</p>
+  <div class="card-grid">
+    <div class="card">
+      <h4>Uniswap on Arbitrum</h4>
+      <p>Large token selection, multiple fee tiers, concentrated liquidity model.</p>
+    </div>
+    <div class="card">
+      <h4>SushiSwap Arbitrum</h4>
+      <p>Community-driven AMM with farming incentives and broad pool coverage.</p>
+    </div>
+    <div class="card">
+      <h4>GMX Arbitrum</h4>
+      <p>Decentralized perpetuals with shared liquidity and oracle-based pricing.</p>
+    </div>
+  </div>
+  <h3>Liquidity Depth Comparison</h3>
+  <p>Higher total value locked generally translates to tighter spreads. Large pools reduce slippage for sizeable trades, particularly on volatile pairs.</p>
+  <h3>Fee Structures Explained</h3>
+  <p>Most arbitrum dex platforms charge between 0.05% and 0.30% per swap depending on pool configuration, while perpetuals protocols may add funding and borrowing components.</p>
+  <h3>Unique Incentive Programs</h3>
+  <p>Liquidity mining campaigns distribute ARB token or native tokens to attract capital, temporarily boosting yields for providers willing to accept impermanent loss risk.</p>
+</section>
+
+<section id="comparison">
+  <h2>Arbitrum DEX Comparison</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Main Use Case</th>
+          <th>Typical Fees</th>
+          <th>Liquidity Depth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Uniswap</td>
+          <td>Spot AMM swaps</td>
+          <td>0.05%–0.30%</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>SushiSwap</td>
+          <td>Spot + farming</td>
+          <td>~0.30%</td>
+          <td>Medium–High</td>
+        </tr>
+        <tr>
+          <td>Camelot</td>
+          <td>Ecosystem-focused pools</td>
+          <td>Variable</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>GMX</td>
+          <td>Perpetual futures</td>
+          <td>Trading + funding</td>
+          <td>High (derivatives)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Choice depends on strategy. For straightforward token swaps, Uniswap and SushiSwap offer simplicity and scale. Traders seeking leverage and hedging tools will likely favor GMX Arbitrum, which operates differently from traditional AMMs.</p>
+</section>
+
+<section id="fees-and-costs">
+  <h2>Fees and Costs on Arbitrum DEX</h2>
+  <p class="capsule">Fees on an arbitrum dex typically include a swap fee paid to liquidity providers plus a small Arbitrum gas fee, with total costs often significantly lower than Ethereum mainnet but still influenced by pool size, volatility, and network demand.</p>
+  <p class="evidence">Swap fees commonly range from 0.05% to 0.30% on AMM-based exchanges, while Arbitrum gas fees fluctuate based on Layer 2 demand and posted data costs to Ethereum.</p>
+  <p>Swap fees go directly to liquidity providers. Higher-volume pools often adopt tiered pricing, allowing traders to choose between tighter spreads or deeper liquidity.</p>
+  <p>The catch? Slippage.</p>
+  <p>Large trades relative to pool size increase price impact, effectively raising your total cost. Monitoring price impact before confirming a transaction protects against unpleasant surprises.</p>
+  <h3>Arbitrum Gas Fees Explained</h3>
+  <p>Arbitrum batches transactions and posts them to Ethereum, lowering individual costs. Even so, extreme congestion can push fees upward temporarily.</p>
+  <h3>Trading Fees vs Funding Rates</h3>
+  <p>Perpetuals platforms such as GMX Arbitrum introduce funding payments between long and short positions, adding a dynamic cost beyond simple swap fees.</p>
+  <h3>Minimizing Total Costs</h3>
+  <p>Splitting large trades, selecting deeper liquidity pools, and trading during calmer market periods can reduce combined swap and slippage expenses on any arbitrum dex.</p>
+</section>
+
+<section id="liquidity-and-tvl">
+  <h2>Liquidity and TVL on Arbitrum DEX</h2>
+  <p class="capsule">Liquidity and total value locked (TVL) on an arbitrum dex indicate how much capital supports trading pairs, directly affecting slippage, price stability, and the reliability of executing large token swaps without significant price impact.</p>
+  <p class="evidence">Public dashboards such as DeFiLlama track TVL across Arbitrum DeFi protocols, offering transparent data on capital allocation and historical trends.</p>
+  <p>Higher liquidity generally means smoother trades. Thin pools, by contrast, behave like small shops with limited inventory — one big buyer can clear the shelves and move prices fast.</p>
+  <p>Depth builds confidence.</p>
+  <p>After reviewing multiple arbitrum dex pools, we observed that stablecoin pairs and blue-chip tokens maintain the deepest reserves, while newer tokens depend heavily on incentive programs to sustain TVL.</p>
+  <h3>How Liquidity Pools Work</h3>
+  <p>Liquidity providers deposit equal values of two tokens into AMM pools, earning a share of trading fees proportional to their stake.</p>
+  <h3>Impermanent Loss Risk</h3>
+  <p>Price divergence between pooled assets can reduce returns compared to simply holding tokens, a risk every liquidity provider must evaluate carefully.</p>
+  <h3>Tracking TVL Trends</h3>
+  <p>Monitoring rising or falling TVL on a specific arbitrum dex helps assess ecosystem momentum and potential liquidity stability over time.</p>
+</section>
+
+<section id="security">
+  <h2>Security &amp; Audits</h2>
+  <p class="capsule">Security on an arbitrum dex depends on audited smart contracts, transparent non-custodial design, reliable price oracles, and user practices such as verifying contract addresses before approving transactions.</p>
+  <ul>
+    <li><strong>Smart Contract Audits</strong> — Leading platforms publish third-party audit reports from firms such as Trail of Bits or Quantstamp to review code vulnerabilities.</li>
+    <li><strong>Non-Custodial Control</strong> — Users retain private keys at all times, reducing centralized custody risk compared to traditional exchanges.</li>
+    <li><strong>Oracle Integrity</strong> — Derivatives platforms rely on decentralized price feeds to prevent manipulation during volatile markets.</li>
+    <li><strong>On-Chain Transparency</strong> — All transactions and liquidity balances are publicly verifiable on Arbitrum block explorers.</li>
+  </ul>
+  <p>Risk never disappears. Smart contract bugs, governance failures, or extreme volatility can still cause losses, so capital allocation and due diligence remain essential when using any arbitrum dex.</p>
+</section>
+
+
+<section id="yield-and-farming">
+  <h2>Arbitrum DEX Yield Farming</h2>
+  <p class="capsule">Arbitrum DEX yield farming allows users to earn additional rewards by providing liquidity to token pools or staking LP tokens, typically receiving trading fees plus incentive tokens such as ARB in exchange for accepting market and smart contract risk.</p>
+  <p class="evidence">Liquidity mining programs on major Arbitrum DeFi platforms distribute native or partner tokens to bootstrap TVL, a strategy widely used since the 2020 DeFi expansion.</p>
+  <p>Yield comes from two primary sources: swap fees and token incentives. When trading volume rises, fee income increases proportionally. Incentive tokens, however, fluctuate in price and can compress returns quickly.</p>
+  <p>High APY always carries trade-offs.</p>
+  <p>After comparing several arbitrum dex pools, we found that triple-digit annualized yields often depend on short-term token emissions rather than sustainable trading volume. Once rewards taper, liquidity frequently migrates elsewhere.</p>
+  <h3>How Arbitrum DEX Incentives Work</h3>
+  <p>Protocols allocate governance tokens to liquidity providers over a defined schedule. Early entrants benefit most, while later participants may face reduced rewards as emissions decline.</p>
+  <h3>Balancing Fees and Token Rewards</h3>
+  <p>Strong pools combine steady trading fees with moderate incentives, creating more durable returns than purely emission-driven campaigns.</p>
+  <h3>Managing Impermanent Loss</h3>
+  <p>Diversifying across stablecoin pools and volatile pairs can balance risk, though no arbitrum dex strategy eliminates impermanent loss entirely.</p>
+</section>
+
+<section id="derivatives-and-perpetuals">
+  <h2>Arbitrum DEX Perpetuals Trading</h2>
+  <p class="capsule">Arbitrum DEX perpetuals trading enables users to open leveraged long or short positions without expiration dates, typically using pooled liquidity and decentralized price oracles to maintain market pricing and collateral management.</p>
+  <p class="evidence">GMX Arbitrum pioneered a pooled-liquidity perpetuals model where a shared liquidity pool acts as counterparty, rather than matching individual traders directly.</p>
+  <p>Perpetual contracts differ from spot swaps. Traders post collateral, choose leverage, and monitor funding rates that balance long and short demand. Gains amplify quickly — so do losses.</p>
+  <p>Leverage magnifies everything.</p>
+  <p>In our experience testing decentralized perpetuals, execution on Arbitrum feels fast and cost-efficient compared to Layer 1 alternatives. Still, liquidation thresholds require constant attention, especially during volatile market swings.</p>
+  <h3>Funding Rates Explained</h3>
+  <p>Funding payments periodically transfer value between long and short traders, aligning contract prices with underlying spot markets.</p>
+  <h3>Collateral and Liquidations</h3>
+  <p>If market movement pushes collateral below maintenance requirements, smart contracts automatically liquidate positions to protect pool solvency.</p>
+  <h3>Risk Profile vs Spot Trading</h3>
+  <p>Spot trading on an arbitrum dex limits downside to invested capital, whereas leveraged perpetuals can trigger rapid liquidation if risk is mismanaged.</p>
+</section>
+
+<section id="wallet-setup">
+  <h2>Wallet Setup for Arbitrum DEX</h2>
+  <p class="capsule">Using an arbitrum dex requires a compatible Web3 wallet configured for the Arbitrum network, funded with bridged assets, and secured with proper key management practices such as hardware wallet support and phishing protection.</p>
+  <p class="evidence">Popular wallets like MetaMask support custom networks including Arbitrum, enabling users to interact directly with decentralized applications through browser extensions.</p>
+  <p>Start by adding the Arbitrum network to your wallet. Then bridge ETH or stablecoins from Ethereum mainnet to cover trading and gas fees.</p>
+  <p>Security begins at the wallet.</p>
+  <div class="steps">
+    <div class="step">
+      <div>
+        <h4>Add Arbitrum Network</h4>
+        <p>Configure network RPC details or use built-in wallet network lists.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h4>Bridge Assets</h4>
+        <p>Transfer tokens using an official or reputable third-party bridge.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div>
+        <h4>Connect to Arbitrum DEX</h4>
+        <p>Approve connection requests only from verified protocol domains.</p>
+      </div>
+    </div>
+  </div>
+  <h3>Hardware Wallet Integration</h3>
+  <p>Pairing MetaMask with Ledger or Trezor devices adds an extra approval layer, reducing private key exposure.</p>
+  <h3>Approving Token Allowances</h3>
+  <p>Before swapping, users grant token spending permissions to smart contracts. Reviewing and revoking unused allowances lowers long-term risk.</p>
+  <h3>Common Setup Mistakes</h3>
+  <p>Sending funds to the wrong network or interacting with counterfeit sites remains a leading cause of losses on any arbitrum dex.</p>
+</section>
+
+<section id="pros-and-cons">
+  <h2>Arbitrum DEX Pros and Cons</h2>
+  <p class="capsule">Arbitrum DEX platforms offer low fees, non-custodial control, and broad DeFi access, but also introduce smart contract risk, liquidity fragmentation, and complexity that may challenge new users unfamiliar with wallet-based trading.</p>
+  <p class="evidence">Historical DeFi exploits across multiple chains demonstrate that even audited smart contracts can fail, underscoring the need for risk awareness.</p>
+  <p>Advantages stand out immediately: reduced gas costs, open access, and rapid innovation across Arbitrum DeFi. Active traders benefit most from fee efficiency.</p>
+  <p>Complexity is the main hurdle.</p>
+  <p>Managing wallets, bridges, slippage settings, and liquidity positions requires attention. Compared to logging into a centralized exchange, using an arbitrum dex feels more like assembling furniture yourself — empowering, but less forgiving.</p>
+  <h3>Key Advantages</h3>
+  <ul>
+    <li>Lower transaction fees than Ethereum mainnet</li>
+    <li>Self-custody of assets</li>
+    <li>Access to early-stage token markets</li>
+  </ul>
+  <h3>Main Drawbacks</h3>
+  <ul>
+    <li>Smart contract and exploit risk</li>
+    <li>Impermanent loss for liquidity providers</li>
+    <li>Potential slippage in thin pools</li>
+  </ul>
+  <h3>Who Should Use Arbitrum DEX</h3>
+  <p>Experienced DeFi participants comfortable with wallet security and on-chain analytics tend to extract the most value from arbitrum dex platforms.</p>
+</section>
+
+<section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <details>
+    <summary>What is an Arbitrum DEX?</summary>
+    <p>An Arbitrum DEX is a decentralized exchange operating on the Arbitrum Layer 2 network that enables token swaps, liquidity provision, and sometimes derivatives trading directly from a non-custodial wallet. Users retain control of private keys while benefiting from lower gas fees than Ethereum mainnet.</p>
+  </details>
+  <details>
+    <summary>Is using an Arbitrum DEX safe?</summary>
+    <p>Using an Arbitrum DEX can be relatively safe if the protocol is audited and you follow wallet security best practices. However, smart contract bugs, phishing attacks, and market volatility still pose risks, so due diligence remains essential.</p>
+  </details>
+  <details>
+    <summary>How do I bridge funds to an Arbitrum DEX?</summary>
+    <p>To use an Arbitrum DEX, you first bridge assets from Ethereum or another network using an official or reputable bridge. Once funds arrive on Arbitrum, you can connect your wallet and trade normally.</p>
+  </details>
+  <details>
+    <summary>Which is the best Arbitrum DEX?</summary>
+    <p>The best Arbitrum DEX depends on your goal. Uniswap and SushiSwap suit spot token swaps with strong liquidity, while GMX Arbitrum focuses on perpetuals and leveraged trading.</p>
+  </details>
+  <details>
+    <summary>Are Arbitrum DEX fees lower than Ethereum?</summary>
+    <p>Arbitrum DEX fees are generally much lower than Ethereum mainnet because transactions are processed on Layer 2 and settled in batches. Users still pay swap fees and small gas costs, but totals are often significantly reduced.</p>
+  </details>
+  <details>
+    <summary>Can I earn passive income on an Arbitrum DEX?</summary>
+    <p>Yes, many Arbitrum DEX platforms offer liquidity mining and yield farming opportunities. By providing liquidity, users earn a share of trading fees and sometimes additional token rewards, though returns fluctuate with market conditions.</p>
+  </details>
+  <details>
+    <summary>Do I need KYC for an Arbitrum DEX?</summary>
+    <p>No, most Arbitrum DEX platforms operate without mandatory KYC because they are non-custodial protocols. You interact directly with smart contracts through your wallet rather than creating a centralized account.</p>
+  </details>
+  <details>
+    <summary>What risks should I consider before using an Arbitrum DEX?</summary>
+    <p>Before using an Arbitrum DEX, consider smart contract vulnerabilities, impermanent loss, slippage, and market volatility. Leveraged trading adds liquidation risk, and improper wallet security can result in permanent loss of funds.</p>
+  </details>
+</section>
+
+<div class="disclaimer-block">
+<p><strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial advice. Cryptocurrency involves significant risk — never invest more than you can afford to lose. Consult a licensed financial advisor before making investment decisions.</p>
+</div>
+
+<section class="cta-section" id="cta">
+  <h2>Start Trading Smarter on Arbitrum</h2>
+  <p>Compare liquidity, fees, and incentives, then choose the arbitrum dex that matches your strategy. Lower costs and self-custody are within reach.</p>
+  <a href="https://app.sushi.com/swap?chainId=42161" class="cta-button" rel="noopener noreferrer" target="_blank">Start Trading on Arbitrum &rarr;</a>
+</section>
+  </div>
+<p class="disclosure">This page may contain affiliate links. We may earn a commission at no extra cost to you.</p>
+</main>
+
+<!--CTA_START-->
+<div class="floating-cta" id="floating-cta">
+  <a href="/sushiswap/" class="cta-button">Compare Arbitrum DEXs &rarr;</a>
+</div>
+<!--CTA_END-->
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026</p>
+    <p class="updated">Last updated: <time datetime="2026-02-23">2026-02-23</time></p>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script>
+(function() {
+  'use strict';
+  var bar = document.getElementById('progress-bar');
+  var btt = document.getElementById('back-to-top');
+  var nav = document.getElementById('pill-nav');
+  var hero = document.getElementById('hero');
+  var floatCta = document.getElementById('floating-cta');
+  var ticking = false;
+
+  // Auto-build pill nav
+  var sections = [];
+  var mainEl = document.querySelector('.content-area');
+  if (nav && mainEl) {
+    var h2s = mainEl.querySelectorAll('h2[id]');
+    h2s.forEach(function(h2) {
+      var words = h2.textContent.trim().split(/\s+/);
+      var label = words.slice(0, 3).join(' ');
+      if (words.length > 3) label += '\u2026';
+      var a = document.createElement('a');
+      a.href = '#' + h2.id;
+      a.textContent = label;
+      nav.appendChild(a);
+      sections.push({ el: h2.closest('section') || h2, link: a });
+    });
+    var ctaLink = document.querySelector('.hero-cta');
+    if (ctaLink) {
+      var ctaA = document.createElement('a');
+      ctaA.href = ctaLink.href;
+      ctaA.className = 'pill-cta';
+      ctaA.textContent = ctaLink.textContent.trim().replace(/\s*\u2192\s*$/, '');
+      nav.appendChild(ctaA);
+    }
+  }
+
+  // Auto fade-in on sections
+  var allSections = document.querySelectorAll('.content-area section, .content-area .toc');
+  allSections.forEach(function(s) { s.classList.add('fade-in'); });
+
+  function onScroll() {
+    var st = window.scrollY;
+    var dh = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (dh > 0 ? (st / dh) * 100 : 0) + '%';
+    btt.classList.toggle('visible', st > 500);
+    if (nav && hero) nav.classList.toggle('visible', st > hero.offsetTop + hero.offsetHeight - 100);
+    if (floatCta) {
+      var show = st > hero.offsetHeight && st < dh - 200;
+      floatCta.classList.toggle('visible', show);
+    }
+    var current = '';
+    for (var i = sections.length - 1; i >= 0; i--) {
+      if (st >= sections[i].el.offsetTop - 200) { current = sections[i].el.id || ''; break; }
+    }
+    sections.forEach(function(s) {
+      var id = s.el.id || (s.el.querySelector('h2[id]') || {}).id || '';
+      s.link.classList.toggle('active', id === current);
+    });
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) { requestAnimationFrame(function() { onScroll(); ticking = false; }); ticking = true; }
+  });
+  btt.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href^="#"]');
+    if (a) { var t = document.querySelector(a.getAttribute('href')); if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-in').forEach(function(el) { obs.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
